@@ -166,10 +166,12 @@ function GlobalPositioningSystem:onLoad(savegame)
     spec.guidanceTerrainAngleIsActive = true
     spec.autoInvertOffset = false
     spec.shiftParallel = false
+    spec.headlandMode = OnHeadlandState.MODES.OFF
 
     spec.abDistanceCounter = 0
 
     spec.lastInputValues = {}
+    -- Todo: lookup if we really need input values for GUI stuff.
     spec.lastInputValues.guidanceIsActive = true -- todo: make toggle
     spec.lastInputValues.showGuidanceLines = true
     spec.lastInputValues.guidanceSteeringIsActive = false
